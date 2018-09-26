@@ -18,13 +18,13 @@ public class EnemyBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-	transform.LookAt(target);
+		transform.LookAt(target);
 	}
 
 	void Shoot()
 	{
-		GameObject bulletPrefab = Instantiate(bullet, transform.position, bullet.transform.rotation);
-		Destroy(bulletPrefab, 5f);
+		GameObject bulletPrefab = Instantiate(bullet, transform.position, transform.rotation);
+		//Destroy(bulletPrefab, 5f);
 		
 	}
 }
