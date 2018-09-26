@@ -15,6 +15,10 @@ public class BulletScript : MonoBehaviour {
 
     void OnCollisionEnter(Collision coll)
     {
-        if (coll.gameObject.tag == "levelObject") Destroy(this.gameObject);
+        if (coll.gameObject.tag == "levelObject")
+        {
+            Destroy(this.gameObject);
+            print("hit: "+coll.gameObject.name);
+        }
     }
 }
