@@ -36,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1363096229435930}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.552231, y: 20.436146, z: 155.4786}
+  m_LocalRotation: {x: -0.1704674, y: 0, z: 0, w: 0.98536336}
+  m_LocalPosition: {x: 9.399688, y: 1.8627361, z: -8.358923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -19.63, y: 0, z: 0}
 --- !u!23 &23797733942074374
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ece6c47cec5826e4293a40c8ff6efa74, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219d32e0e603bc348b987c0d33b837d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  bullet: {fileID: 1661581379232350, guid: 1ff484c67a1acaf4b9f411e9876278c3, type: 2}
 --- !u!136 &136077969189660338
 CapsuleCollider:
   m_ObjectHideFlags: 1
