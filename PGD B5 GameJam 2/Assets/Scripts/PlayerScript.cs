@@ -36,10 +36,7 @@ public class PlayerScript : MonoBehaviour
             isJumping = true;
             rb.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
         }
-        if (rb.velocity.magnitude < 0.01) isJumping = false;
-
-
-            transform.Translate(x, 0, z);
+        transform.Translate(x, 0, z);
     }
 
     void Shoot()
@@ -47,4 +44,11 @@ public class PlayerScript : MonoBehaviour
         Instantiate(bulletPrefab, bulletSpawn.transform.position, this.transform.rotation);
     }
 
+    void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.name == "Ground")
+        {
+            isJumping = false;
+        }
+    }
 }
