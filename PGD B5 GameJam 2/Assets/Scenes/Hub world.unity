@@ -4767,7 +4767,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1060568578273592, guid: fd1301b78183c584eb286596e679ca4f, type: 2}
       propertyPath: m_TagString
-      value: levelObject
+      value: level1Portal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd1301b78183c584eb286596e679ca4f, type: 2}
@@ -5119,6 +5119,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: -123.099, y: -36.977997, z: -127.075}
+--- !u!1 &1528703259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1060568578273592, guid: fd1301b78183c584eb286596e679ca4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1397228422}
+--- !u!114 &1528703264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1528703259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc8fd242e5b8b54da972bce579e5dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1540066061
 GameObject:
   m_ObjectHideFlags: 0
@@ -6731,6 +6747,21 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114425549946468060, guid: 570783d1ca5f28547bccc1681dd1ede5,
+        type: 2}
+      propertyPath: sensitivityX
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114425549946468060, guid: 570783d1ca5f28547bccc1681dd1ede5,
+        type: 2}
+      propertyPath: sensitivityY
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114425549946468060, guid: 570783d1ca5f28547bccc1681dd1ede5,
+        type: 2}
+      propertyPath: frameCounter
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570783d1ca5f28547bccc1681dd1ede5, type: 2}
