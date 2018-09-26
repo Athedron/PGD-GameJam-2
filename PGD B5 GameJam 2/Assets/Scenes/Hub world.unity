@@ -6713,6 +6713,11 @@ Prefab:
       propertyPath: jumpSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 23327720745125736, guid: 570783d1ca5f28547bccc1681dd1ede5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f5954cd006592040aabcd2befb99861, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570783d1ca5f28547bccc1681dd1ede5, type: 2}
   m_IsPrefabAsset: 0
