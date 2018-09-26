@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float moveSpeed = 150f;
+    public float moveSpeed = 10;
 	public float jumpSpeed = 0.5f;
     public GameObject bulletPrefab, bulletSpawn;
-	Rigidbody player;
+	Rigidbody rb;
 
-	void Start() {
-		player = GetComponent<Rigidbody>();
-	}
+    bool isJumping;
+
+    Vector3 jumpPos;
+    
+    void Start() {
+        rb = GetComponent<Rigidbody>();
+        jumpPos = transform.position;
+
+    }
 
 	void Update()
     {
@@ -22,24 +28,23 @@ public class PlayerScript : MonoBehaviour
 
     void Move()
     {
-		var y = Input.GetAxis("Vertical");
-		if (Input.GetKey(KeyCode.Space)) {
-			y *= Time.deltaTime * jumpSpeed;
-		}
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        var z = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-		
-		
-        transform.Translate(x, 0, z);
+        float x = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+        float z = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+
+        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+        {
+            isJumping = true;
+            rb.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+        }
+        if (rb.velocity.magnitude < 0.01) isJumping = false;
+
+
+            transform.Translate(x, 0, z);
     }
 
     void Shoot()
     {
         Instantiate(bulletPrefab, bulletSpawn.transform.position, this.transform.rotation);
     }
-
-	void Jump() {
-
-	}
 
 }
