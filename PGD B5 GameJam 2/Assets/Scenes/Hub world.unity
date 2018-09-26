@@ -6767,8 +6767,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 84.08501, y: -234.22499, z: -191.502}
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 --- !u!1001 &1933619799
 Prefab:
@@ -6812,9 +6810,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570783d1ca5f28547bccc1681dd1ede5, type: 2}
   m_IsPrefabAsset: 0
->>>>>>> parent of 8d06ace... Begin gemaakt aan playerscript fixen
-=======
->>>>>>> parent of 5e75075... Merge branch 'Branch-Ralph'
 --- !u!1 &1957442340
 GameObject:
   m_ObjectHideFlags: 0
