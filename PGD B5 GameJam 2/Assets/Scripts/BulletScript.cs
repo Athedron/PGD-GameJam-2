@@ -10,11 +10,11 @@ public class BulletScript : MonoBehaviour {
 	}
 	
 	void Update () {
-        transform.Translate(0,0, bulletSpeed);
+        transform.Translate(0,0, bulletSpeed * Time.deltaTime);
 	}
 
-    void OnCollissionEnter(Collision coll)
+    void OnCollisionEnter(Collision coll)
     {
-        //Add collission to objects here.
+        if (coll.gameObject.tag == "levelObject") Destroy(this.gameObject);
     }
 }
