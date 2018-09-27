@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDist: 10
-  minDist: 0.5
+  minDist: 1
   moveSpeed: 3
 --- !u!136 &136892114520567244
 CapsuleCollider:

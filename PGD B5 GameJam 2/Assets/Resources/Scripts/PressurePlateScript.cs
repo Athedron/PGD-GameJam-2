@@ -34,7 +34,7 @@ public class PressurePlateScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.name == "Player" || other.gameObject.name == "Moving_enemy")
         {
             timer = timerStartTime;
             activated = true;

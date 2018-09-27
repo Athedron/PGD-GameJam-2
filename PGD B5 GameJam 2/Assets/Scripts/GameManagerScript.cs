@@ -7,7 +7,8 @@ public class GameManagerScript : MonoBehaviour {
     // Use this for initialization
     public GameObject playerPrefab;
 	void Start () {
-        if (GameObject.Find("Player") == null)
+		Cursor.visible = false;
+		if (GameObject.Find("Player") == null)
         {
             GameObject player = Instantiate(playerPrefab);
             player.name = "Player";

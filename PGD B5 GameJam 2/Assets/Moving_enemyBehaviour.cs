@@ -6,7 +6,7 @@ public class Moving_enemyBehaviour : MonoBehaviour {
 
 	private Transform target;
 	public float maxDist = 10f;
-	public float minDist = 0.5f;
+	public float minDist = 1f;
 	public float moveSpeed = 3f;
 
 
@@ -17,7 +17,7 @@ public class Moving_enemyBehaviour : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if (Vector3.Distance(transform.position, target.position) >= minDist)
+		if (Vector2.Distance(transform.position, target.position) >= minDist)
 		{
 
 			transform.position += transform.forward * moveSpeed * Time.deltaTime;
